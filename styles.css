@@ -34,10 +34,10 @@
 .about__copy h2{margin:0 0 25px;font-size:52px;line-height:1.08}
 .about__copy p:not(.section-kicker){width:556px;margin-bottom:16px;line-height:1.625}
 
-.transformation{height:756px;background:linear-gradient(90deg,#2e201b 0%,#4a3023 37%,#5d3c2b 100%)}
-.transformation:after{background:radial-gradient(circle at 30% 43%,rgba(209,197,192,.09),transparent 37%)}
-.transformation .transformation__maria{position:absolute;z-index:1;left:11.5%;top:16px;bottom:auto;width:610px;height:917px;max-width:none;object-fit:fill;filter:drop-shadow(-26px 20px 36px rgba(0,0,0,.2))}
-.transformation__copy{top:205px;left:45.25%;width:660px}
+.transformation{height:756px;background:#5b3929}
+.transformation:after{display:none}
+.transformation .transformation__maria{position:absolute;z-index:1;left:4.45%;top:-3px;bottom:auto;width:610px;height:917px;max-width:none;object-fit:fill;filter:drop-shadow(-26px 20px 36px rgba(0,0,0,.2))}
+.transformation__copy{top:205px;left:38.5%;width:680px}
 .transformation__copy p:first-child{margin-bottom:26px;color:#d1c5c0;font-size:12px;font-weight:500;letter-spacing:3px;text-transform:uppercase}
 .transformation__copy p:last-child{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:39px;font-weight:500;line-height:1.27}
 .transformation__copy em{color:#eadbd0;font-style:italic}
