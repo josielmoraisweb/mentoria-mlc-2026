@@ -91,3 +91,28 @@ footer .footer__bottom{width:1200px;margin-top:55px;margin-left:max(32px,calc((1
   .closing{height:675px}.closing__inner{width:calc(100% - 40px)}.closing__copy{top:56px;width:300px}.closing__logo{width:140px}.closing__copy h2{font-size:49px}.closing__copy .button{min-width:0}.closing__art{left:20%;top:205px}.closing__art .vertical-wordmark{left:10%;top:-90px;width:250px}.closing__art .closing__maria{left:0;top:-100px;width:470px;height:auto}
   footer{padding:55px 0 34px}.footer__grid{grid-template-columns:1fr;gap:30px}footer .footer__bottom{width:calc(100% - 64px);margin-inline:auto;margin-top:42px;flex-direction:column;gap:8px}.footer__logo{width:125px}
 }
+
+/* Frames atuais do Figma: MLC _ HERO DESK e MLC rodape desktop */
+.hero{position:relative;height:846px;overflow:hidden;background:linear-gradient(179.146deg,#9b8178 23.133%,#352c29 105.03%)}
+.hero:after{display:none}
+.hero__visual{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center}
+.hero__content{position:absolute;z-index:2;inset:0;width:min(1920px,100%);margin:0 auto;padding:0}
+.hero__logo{position:absolute;left:333.11px;top:206px;width:230.026px;height:121.763px;margin:0;object-fit:fill}
+.hero h1{position:absolute;left:331px;top:349px;width:533px;margin:0;font-family:Poppins,Arial,sans-serif;font-size:41.243px;font-weight:600;line-height:48.608px;letter-spacing:0}
+.hero__content>p:not(.eyebrow){position:absolute;left:331px;top:459px;width:494.922px;margin:0;color:rgba(255,255,255,.9);font-size:23.568px;line-height:30.638px}
+.hero .eyebrow{position:absolute;left:331px;top:542.54px;width:auto;margin:0;color:#d1c5c0;font-size:13.575px;font-weight:500;line-height:20.363px;letter-spacing:4.344px;white-space:nowrap}
+.hero .button{position:absolute;left:331px;top:608px;width:350.309px;min-width:0;min-height:59.446px;height:59.446px;padding:0;border-radius:1060px;background:#25d366;box-shadow:0 10.615px 25.477px -10.615px rgba(13,82,41,.3);font-size:21.139px;font-weight:700;line-height:19.872px;letter-spacing:0}
+
+footer{position:relative;height:115px;min-height:115px;padding:0;background:#402719;color:#fff}
+footer .footer__copyright,footer .footer__credit{position:absolute;left:50%;width:auto;margin:0;transform:translateX(-50%);color:#fff;font-family:Inter,Poppins,Arial,sans-serif;line-height:normal;white-space:nowrap}
+footer .footer__copyright{top:27px;font-size:18px;font-weight:400}
+footer .footer__credit{top:69px;font-size:16px;font-weight:300}
+
+@media(max-width:900px){
+  .hero{height:780px}.hero__visual{object-position:56% center}.hero__logo{left:40px;top:92px;width:190px;height:auto}.hero h1{left:40px;top:245px;width:47vw;font-size:36px;line-height:1.14}.hero__content>p:not(.eyebrow){left:40px;top:350px;width:46vw;font-size:19px;line-height:1.35}.hero .eyebrow{left:40px;top:435px;width:46vw;font-size:11px;line-height:1.5;white-space:normal}.hero .button{left:40px;top:505px;width:300px;height:56px;min-height:56px;font-size:18px}
+}
+
+@media(max-width:640px){
+  .hero{height:760px}.hero__visual{width:165%;left:-54%;object-position:65% center;filter:brightness(.82)}.hero__content{width:100%}.hero__logo{left:20px;top:48px;width:150px}.hero h1{left:20px;top:190px;width:82%;font-size:33px;line-height:1.12}.hero__content>p:not(.eyebrow){left:20px;top:310px;width:72%;font-size:16px;line-height:1.35}.hero .eyebrow{left:20px;top:390px;width:67%;font-size:9.5px;letter-spacing:2px}.hero .button{left:20px;top:460px;width:245px;height:52px;min-height:52px;font-size:15px}
+  footer{height:132px;min-height:132px;padding:0 18px;text-align:center}footer .footer__copyright,footer .footer__credit{left:18px;width:calc(100% - 36px);transform:none;white-space:normal}footer .footer__copyright{top:25px;font-size:14px}footer .footer__credit{top:78px;font-size:14px}
+}
