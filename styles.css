@@ -133,3 +133,18 @@ footer .footer__credit{top:69px;font-size:16px;font-weight:300}
   .hero{height:760px}.hero__visual{width:165%;left:-54%;object-position:65% center;filter:brightness(.82)}.hero__content{width:100%}.hero__logo{left:20px;top:48px;width:150px}.hero h1{left:20px;top:190px;width:82%;font-size:33px;line-height:1.12}.hero__content>p:not(.eyebrow){left:20px;top:310px;width:72%;font-size:16px;line-height:1.35}.hero .eyebrow{left:20px;top:390px;width:67%;font-size:9.5px;letter-spacing:2px}.hero .button{left:20px;top:460px;width:245px;height:52px;min-height:52px;font-size:15px}
   footer{height:132px;min-height:132px;padding:0 18px;text-align:center}footer .footer__copyright,footer .footer__credit{left:18px;width:calc(100% - 36px);transform:none;white-space:normal}footer .footer__copyright{top:25px;font-size:14px}footer .footer__credit{top:78px;font-size:14px}
 }
+
+/* Frame atual do Figma: MLC pronta */
+.closing{position:relative;height:min(675px,35.15625vw);overflow:hidden;background:#d1c5c0}
+.closing .closing__frame{position:absolute;z-index:1;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center}
+.closing__copy{position:absolute;z-index:2;left:min(457px,23.802083vw);top:min(154px,8.020833vw);width:min(405.347px,21.111823vw);padding:0}
+.closing__logo{display:block;width:min(165.147px,8.601406vw);height:min(92.05px,4.794271vw);margin:0 0 min(32.73px,1.704688vw);object-fit:fill}
+.closing__copy h2{margin:0;color:#221a17;font-family:Poppins,Arial,sans-serif;font-size:min(64.954px,3.382vw);font-style:italic;font-weight:500;line-height:min(64.808px,3.375417vw);letter-spacing:0}
+
+@media(max-width:900px){
+  .closing{height:650px}.closing .closing__frame{object-position:57% center}.closing:after{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(90deg,rgba(209,197,192,.98) 0,rgba(209,197,192,.82) 36%,transparent 68%)}.closing__copy{z-index:3;left:36px;top:86px;width:310px}.closing__logo{width:145px;height:auto;margin-bottom:34px}.closing__copy h2{font-size:50px;line-height:1.02}
+}
+
+@media(max-width:640px){
+  .closing{height:720px}.closing .closing__frame{width:100%;left:0;object-position:60% center}.closing:after{background:linear-gradient(180deg,rgba(209,197,192,.96) 0,rgba(209,197,192,.62) 37%,rgba(209,197,192,.08) 65%)}.closing__copy{left:24px;top:38px;width:315px}.closing__logo{width:130px;margin-bottom:20px}.closing__copy h2{font-size:47px;line-height:1.02}
+}
