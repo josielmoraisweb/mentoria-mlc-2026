@@ -9,12 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;1,500&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,600&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=20260829-7" />
-    <link rel="stylesheet" href="gallery-2-columns.css" />
+    <link rel="stylesheet" href="responsive-mosaics-v2.css" />
     <style>
       @media (max-width: 900px) {
         .results__grid {
           width: 100% !important;
           grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+        .feedback__grid {
+          display: block !important;
+          width: 100% !important;
+          column-count: 2;
+          column-gap: 12px;
+        }
+        .feedback__grid figure {
+          display: inline-block;
+          width: 100% !important;
+          margin: 0 0 12px !important;
+          break-inside: avoid;
+          vertical-align: top;
+        }
+        .feedback__grid figure:nth-child(3) {
+          break-before: column;
+        }
+      }
+      @media (max-width: 640px) {
+        .feedback__grid {
+          column-gap: 8px;
+        }
+        .feedback__grid figure {
+          margin-bottom: 8px !important;
         }
       }
     </style>

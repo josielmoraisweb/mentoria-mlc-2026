@@ -1,0 +1,40 @@
+@media (max-width: 900px) {
+  .results__grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px;
+  }
+
+  .feedback__grid {
+    display: block !important;
+    width: 100%;
+    column-count: 2;
+    column-gap: 12px;
+  }
+
+  .feedback__grid figure {
+    display: inline-block;
+    width: 100% !important;
+    margin: 0 0 12px !important;
+    break-inside: avoid;
+    vertical-align: top;
+  }
+
+  .feedback__grid figure:nth-child(3) {
+    break-before: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .results__grid {
+    gap: 12px 10px;
+  }
+
+  .feedback__grid {
+    column-gap: 8px;
+  }
+
+  .feedback__grid figure {
+    margin-bottom: 8px !important;
+  }
+}
