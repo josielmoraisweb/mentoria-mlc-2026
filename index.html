@@ -9,12 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;1,500&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,600&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=20260829-7" />
-    <link rel="stylesheet" href="responsive-mosaics-v2.css" />
+    <link rel="stylesheet" href="responsive-mosaics-v3.css" />
     <style>
       @media (max-width: 900px) {
         .results__grid {
+          --results-gap: 18px;
           width: 100% !important;
           grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: var(--results-gap) !important;
+        }
+        .results__grid figure:last-child:nth-child(odd) {
+          width: calc((100% - var(--results-gap)) / 2) !important;
+          grid-column: 1 / -1;
+          justify-self: center;
         }
         .feedback__grid {
           display: block !important;
@@ -32,13 +39,102 @@
         .feedback__grid figure:nth-child(3) {
           break-before: column;
         }
+        .closing {
+          height: 90.25vw !important;
+          min-height: 0;
+          overflow: hidden;
+          background: #d1c5c0;
+        }
+        .closing > picture {
+          display: contents;
+        }
+        .closing::after {
+          display: none !important;
+        }
+        .closing .closing__frame {
+          z-index: 1;
+          left: 33.25vw !important;
+          top: -13.75vw !important;
+          width: 73.5vw !important;
+          height: 110.25vw !important;
+          max-width: none;
+          object-fit: cover;
+          object-position: center;
+        }
+        .closing__wordmark[hidden] {
+          display: block !important;
+          position: absolute;
+          z-index: 0;
+          left: 55.595vw;
+          top: -15.064vw;
+          width: 42.895vw;
+          height: 355.101vw;
+          max-width: none;
+        }
+        .closing__copy {
+          z-index: 3;
+          left: 10.375vw !important;
+          top: 11.875vw !important;
+          width: 43.096vw !important;
+          padding: 0 !important;
+        }
+        .closing__logo {
+          width: 21vw !important;
+          height: auto !important;
+          margin: 0 !important;
+        }
+        .closing__copy h2 {
+          position: absolute;
+          left: 0;
+          top: 15.25vw;
+          width: 43.096vw;
+          margin: 0 !important;
+          font-family: Poppins, Arial, sans-serif !important;
+          font-size: 6.906vw !important;
+          font-style: italic;
+          font-weight: 400 !important;
+          line-height: 6.89vw !important;
+        }
       }
       @media (max-width: 640px) {
+        .results__grid {
+          --results-gap: 10px;
+          gap: 12px var(--results-gap) !important;
+        }
         .feedback__grid {
           column-gap: 8px;
         }
         .feedback__grid figure {
           margin-bottom: 8px !important;
+        }
+        .closing {
+          height: 123.208vw !important;
+        }
+        .closing .closing__frame {
+          left: 38.567vw !important;
+          top: -18.771vw !important;
+          width: 100.341vw !important;
+          height: 150.512vw !important;
+        }
+        .closing__wordmark[hidden] {
+          left: 69.072vw;
+          top: -20.566vw;
+          width: 58.56vw;
+          height: 484.78vw;
+        }
+        .closing__copy {
+          left: 7.338vw !important;
+          top: 16.212vw !important;
+          width: 58.84vw !important;
+        }
+        .closing__logo {
+          width: 28.67vw !important;
+        }
+        .closing__copy h2 {
+          top: 20.819vw;
+          width: 58.84vw;
+          font-size: 9.428vw !important;
+          line-height: 9.406vw !important;
         }
       }
     </style>
@@ -53,7 +149,7 @@
           <h1>Refinando sua técnica para conquistar o Pódio</h1>
           <p>Estratégias e segredos para quem deseja conquistar o Pódio com confiança</p>
           <p class="eyebrow">+12x Campeã em Campeonatos Internacionais</p>
-          <a class="button" href="https://wa.me/5535997458386">Chamar no WhatsApp</a>
+          <a class="button" href="https://api.whatsapp.com/send?phone=553597458386&amp;text=Ol%C3%A1%2C%20Maria%20Lisboa!%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20*MENTORIA%20PARA%20CAMPEONATO%20M%C3%89TODO%20LASH%20CAMPE%C3%83*%F0%9F%8F%86">Chamar no WhatsApp</a>
         </div>
       </section>
 
@@ -134,7 +230,8 @@
       <section class="info section-light"><div class="wrap"><h2>Informações importantes</h2><dl><div><dt>Reembolso</dt><dd>Não há reembolso, salvo nas hipóteses previstas na política de cancelamento.</dd></div><div><dt>Presencial</dt><dd>Inclui coffee break, kit de brindes e certificação.</dd></div><div><dt>Modelos</dt><dd>São necessárias duas modelos para os dias de prática.</dd></div><div><dt>Pinças</dt><dd>A aluna deve levar as suas próprias pinças.</dd></div></dl></div></section>
 
       <section class="closing">
-        <img class="closing__frame" src="assets/closing-frame.webp" alt="Maria Lisboa com seus troféus" />
+        <picture><source media="(max-width: 900px)" srcset="assets/pronta-mlc-responsive.webp" /><img class="closing__frame" src="assets/closing-frame.webp" alt="Maria Lisboa com seus troféus" /></picture>
+        <img class="closing__wordmark" src="assets/maria-lisboa-wordmark.svg" alt="" aria-hidden="true" hidden />
         <div class="closing__copy"><img class="closing__logo" src="assets/mlc-logo-dark.svg" alt="Mentoria MLC — Método Lash Campeã" /><h2>Pronta<br />para subir<br />ao pódio?</h2></div>
       </section>
     </main>
