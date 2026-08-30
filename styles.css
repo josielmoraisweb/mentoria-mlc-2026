@@ -184,6 +184,7 @@ footer .footer__credit a{color:inherit;font-weight:700;text-decoration:none}
   .manifesto{min-height:0;padding:42px 18px}
   .manifesto p{font-size:18px;line-height:1.5}
   .reveal-ready .manifesto p[data-reveal]{opacity:1;transform:none;transition:none;will-change:auto}
+  .results__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;width:100%}
 }
 
 /* Frames mobile do Figma: hero, quem sou eu e transformação */
@@ -192,6 +193,7 @@ footer .footer__credit a{color:inherit;font-weight:700;text-decoration:none}
 
   .manifesto{padding:38px 12px}
   .manifesto p{font-size:15px;line-height:1.5}
+  .results__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 10px}
 
   .hero{height:calc(100vw * 1146 / 790);min-height:0;background:#160d0a}
   .hero__visual{inset:0;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
